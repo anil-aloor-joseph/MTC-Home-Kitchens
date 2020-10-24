@@ -1,0 +1,18 @@
+{
+  "name": "gulp-sass-compiler",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "anil",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "github:gulpjs/gulp",
+    "gulp-sass": "^4.1.0"
+  },
+  "dependencies": {
+    "gulp-cli": "github:gulpjs/gulp-cli"
+  }
+}

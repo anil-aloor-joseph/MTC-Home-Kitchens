@@ -55,6 +55,10 @@ header{
     font-size: 32px;
     line-height: 42px;
     font-family: Helvetica-Bold;
+    @media (max-width:576px){
+        font-size: 24px;
+        line-height: 29px;
+    }
 }
 
 .button{
@@ -67,6 +71,10 @@ header{
     padding: 10px 30px;
     @media (min-width: 1200px) {
         padding: 20px 59px;
+    }
+    @media (max-width:576px){
+        font-size: 12px;
+        padding: 10px 15px;
     }
     border:0;
     &:focus {
@@ -104,8 +112,14 @@ header{
         }
         .sliding-content{
             max-width: 686px;
+            @media (max-width:576px){
+                padding:10px;
+            }
             .text-small-title{
                 text-shadow: 0px 0px 4px $c-dark-black;
+                @media (max-width:576px){
+                    margin-bottom:8px;
+                }
             }
             .text-main-title{
                 font-size: 30px;
@@ -116,6 +130,11 @@ header{
                 @media (min-width: 1200px) {
                     font-size: 52px;
                     line-height: 58px;
+                }
+                @media (max-width:576px){
+                    font-size: 25px;
+                    line-height: 28px;
+                    margin-bottom: 6px;
                 }
             }
         }
@@ -129,9 +148,13 @@ header{
     }
     .image-details{
         padding-left:35px;
-        max-width: 80%;
+        max-width: 90%;
         @media (max-width: 992px) {
             padding: 60px;
+        }
+        @media (max-width: 576px) { 
+            padding-left:0px;
+            padding-right:0px;
         }
         @media (min-width: 1200px) {
             padding-left: 70px;
@@ -178,6 +201,10 @@ header{
                 padding-bottom: 11px;
                 line-height: 32px;
                 margin:0;
+                @media (max-width: 576px) { 
+                    font-size: 14px;
+                    line-height: 23px;
+                }
             }
             .text-narrator{
                 font-size:15px;
@@ -199,6 +226,9 @@ header{
             height: 71px;
             background-size: contain;
             background-repeat: no-repeat;
+            @media (max-width:576px){
+                display: none;
+            }
         }
         .left{
             background-image: url('../images/left.svg');
@@ -273,8 +303,8 @@ header{
         }
         .social-media-icons{
             li{
-                width: 40px;
-                height: 40px;
+                width: 25px;
+                height: 25px;
                 border-radius: 100%;
                 display: flex;
                 justify-content: center;

@@ -76,6 +76,10 @@ header {
   font-size: 32px;
   line-height: 42px;
   font-family: Helvetica-Bold; }
+  @media (max-width: 576px) {
+    .text-main-title {
+      font-size: 24px;
+      line-height: 29px; } }
 
 .button {
   box-shadow: 0px 2px 10px #00000033;
@@ -89,6 +93,10 @@ header {
   @media (min-width: 1200px) {
     .button {
       padding: 20px 59px; } }
+  @media (max-width: 576px) {
+    .button {
+      font-size: 12px;
+      padding: 10px 15px; } }
   .button:focus {
     outline: 0; }
 
@@ -117,8 +125,14 @@ header {
 
 .section-1 .owl-carousel .sliding-content {
   max-width: 686px; }
+  @media (max-width: 576px) {
+    .section-1 .owl-carousel .sliding-content {
+      padding: 10px; } }
   .section-1 .owl-carousel .sliding-content .text-small-title {
     text-shadow: 0px 0px 4px #000000; }
+    @media (max-width: 576px) {
+      .section-1 .owl-carousel .sliding-content .text-small-title {
+        margin-bottom: 8px; } }
   .section-1 .owl-carousel .sliding-content .text-main-title {
     font-size: 30px;
     letter-spacing: -1px;
@@ -129,6 +143,11 @@ header {
       .section-1 .owl-carousel .sliding-content .text-main-title {
         font-size: 52px;
         line-height: 58px; } }
+    @media (max-width: 576px) {
+      .section-1 .owl-carousel .sliding-content .text-main-title {
+        font-size: 25px;
+        line-height: 28px;
+        margin-bottom: 6px; } }
 
 .section-2 .img-fluid {
   width: 100%;
@@ -136,10 +155,14 @@ header {
 
 .section-2 .image-details {
   padding-left: 35px;
-  max-width: 80%; }
+  max-width: 90%; }
   @media (max-width: 992px) {
     .section-2 .image-details {
       padding: 60px; } }
+  @media (max-width: 576px) {
+    .section-2 .image-details {
+      padding-left: 0px;
+      padding-right: 0px; } }
   @media (min-width: 1200px) {
     .section-2 .image-details {
       padding-left: 70px;
@@ -181,6 +204,10 @@ header {
       padding-bottom: 11px;
       line-height: 32px;
       margin: 0; }
+      @media (max-width: 576px) {
+        .section-3 .owl-carousel-2 .sliding-content .text-narration {
+          font-size: 14px;
+          line-height: 23px; } }
     .section-3 .owl-carousel-2 .sliding-content .text-narrator {
       font-size: 15px;
       line-height: 28px;
@@ -199,6 +226,9 @@ header {
     height: 71px;
     background-size: contain;
     background-repeat: no-repeat; }
+    @media (max-width: 576px) {
+      .section-3 .arrows div {
+        display: none; } }
   .section-3 .arrows .left {
     background-image: url("../images/left.svg");
     background-position: left; }
@@ -252,8 +282,8 @@ header {
         .footer .footer-body .list-group .text-small-title a:hover {
           color: #ffffff; }
   .footer .footer-body .social-media-icons li {
-    width: 40px;
-    height: 40px;
+    width: 25px;
+    height: 25px;
     border-radius: 100%;
     display: flex;
     justify-content: center;

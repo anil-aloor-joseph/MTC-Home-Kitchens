@@ -6,14 +6,15 @@ $(document).ready(function(){
     carousel1.owlCarousel({
         items:1,
         loop:true,
-        autoplay:false
+        autoplay:true
     });
 
     carousel2.owlCarousel({
         items:1,
         loop:true,
         nav:false,
-        dots:false
+        dots:false,
+        autoplay:true
     });
 
     $('.right').click(function() {

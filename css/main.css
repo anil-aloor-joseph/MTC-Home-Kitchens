@@ -41,6 +41,10 @@ header {
       @media (max-width: 992px) {
         header nav.border-down {
           border-bottom: 0; } }
+    header nav ul {
+      list-style: none; }
+      header nav ul .nav-link {
+        padding: 0; }
     header nav .text-small-title a:hover {
       color: #222222; }
     @media (min-width: 1200px) {
@@ -54,6 +58,12 @@ header {
       @media (min-width: 1200px) {
         header nav .button {
           margin-left: 20px; } }
+    header nav #res-button {
+      font-size: 25px; }
+      header nav #res-button:hover {
+        cursor: pointer; }
+    header nav .full-height {
+      height: 100vh; }
 
 .text-small-title {
   font-size: 13px;

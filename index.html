@@ -11,18 +11,18 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <header class="w-100">
-        <nav class="navbar border-down container">
-            <!-- <a class="navbar-brand" href="#">Navbar</a> -->
-              <ul class="d-flex p-0 w-100 justify-content-between align-items-center">
+    <header class="w-100 res-bg-header">
+        <nav class="navbar border-down container-lg container-fluid px-0 d-flex">
+            <div class="menu d-md-none d-none d-lg-block order-2 w-100">
+              <ul class="d-flex px-0 my-2 w-100 justify-content-between align-items-center flex-lg-row flex-column">
                 <li class="nav-item text-small-title d-flex social-media-icons">
-                    <a class="nav-link font-white" href="#">
+                    <a class="nav-link px-1 font-white" href="#">
                         <i class="fab fa-facebook-f"></i>
                     </a>
-                    <a class="nav-link font-white" href="#">
+                    <a class="nav-link px-1 font-white" href="#">
                         <i class="fab fa-twitter"></i>
                     </a>
-                    <a class="nav-link font-white" href="#">
+                    <a class="nav-link px-1 font-white" href="#">
                         <i class="fab fa-instagram"></i>
                     </a>
                   </li>
@@ -32,8 +32,8 @@
                 <li class="nav-item text-small-title">
                   <a class="nav-link font-white" href="#">Plan my kitchen</a>
                 </li>
-                <li class="nav-item text-small-title logo">
-                    <a class="nav-link font-white" href="#">
+                <li class="nav-item text-small-title logo d-lg-block d-none">
+                    <a class="nav-link px-0 font-white" href="#">
                         <img src="images/logo.svg" alt="logo">
                     </a>
                 </li>
@@ -43,8 +43,19 @@
                 <li class="nav-item text-small-title">
                     <a class="nav-link font-white" href="#">Gallery</a>
                 </li>
-                  <button class="button border bg-transparent">Order Now <i class="fas fa-shopping-cart"></i></button>
+                  <button class="button border bg-transparent mt-4 mt-lg-0">Order Now <i class="fas fa-shopping-cart"></i></button>
               </ul>
+            </div>
+            <div class="w-100 res-block d-lg-none d-md-block px-4 mx-md-0">
+                <a class="nav-link float-left d-inline-block px-0 font-white" href="#">
+                    <img src="images/logo.svg" alt="logo">
+                </a>
+                  <div class="d-inline-block float-right" id="res-button">
+                      <p class="font-white">
+                        <i class="fas fa-bars"></i>
+                      </p>
+                  </div>
+            </div>
           </nav>
     </header>
     <section class="section-1">
@@ -154,16 +165,16 @@
         </h2>
         <div class="gallery-images container">
             <div class="row">
-                <div class="col-md-3 col-sm-6 col-12 mb-2">
+                <div class="col-md-3 col-sm-6 col-12 mb-4">
                     <img src="images/gallery1.png" class="img-fluid mx-sm-0 mx-auto d-block" alt="gallery-image">
                 </div>
-                <div class="col-md-3 col-sm-6 col-12 mb-2">
+                <div class="col-md-3 col-sm-6 col-12 mb-4">
                     <img src="images/gallery2.png" class="img-fluid mx-sm-0 mx-auto d-block" alt="gallery-image">
                 </div>
-                <div class="col-md-3 col-sm-6 col-12 mb-2">
+                <div class="col-md-3 col-sm-6 col-12 mb-4">
                     <img src="images/gallery3.png" class="img-fluid mx-sm-0 mx-auto d-block" alt="gallery-image">
                 </div>
-                <div class="col-md-3 col-sm-6 col-12 mb-2">
+                <div class="col-md-3 col-sm-6 col-12 mb-4">
                     <img src="images/gallery4.png" class="img-fluid mx-sm-0 mx-auto d-block" alt="gallery-image">
                 </div>
             </div>

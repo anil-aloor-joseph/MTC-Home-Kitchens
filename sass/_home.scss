@@ -11,6 +11,12 @@ header{
                 border-bottom:0;
             }
         }
+        ul{
+            list-style: none;
+            .nav-link{
+                padding: 0;
+            }
+        }
         .text-small-title{
             a:hover{
                  color:$c-black;
@@ -25,6 +31,15 @@ header{
         .button{
             padding: 13px 38px;
             @media (min-width: 1200px) {margin-left: 20px;}
+        }
+        #res-button{
+            font-size:25px;
+            &:hover{
+                cursor: pointer;
+            }
+        }
+        .full-height{
+            height: 100vh;
         }
     }
 }

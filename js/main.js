@@ -29,7 +29,7 @@ $(document).ready(function(){
         $(this).find('.fas').toggleClass("fa-bars fa-times");
         $('.menu').toggleClass("d-md-none d-none full-height");
         $('.res-bg-header').toggleClass('bg-black position-fixed');
-        $('.menu').find('.nav-item').toggleClass('border-bottom py-2');
+        $('.menu').find('.nav-item').toggleClass('border-bottom py-3');
     });
 
   });

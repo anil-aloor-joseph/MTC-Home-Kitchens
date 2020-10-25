@@ -1,0 +1,13 @@
+@mixin screen($point) {
+    @if $point == mobileonly {
+        @media (max-width: $mobileonly) { @content ; }
+     }
+    
+     @else if $point == tabonly {
+        @media (max-width: $tabonly) { @content ; }
+    }
+
+    @else if $point == desktop {
+        @media (min-width: $desktop) { @content ; }
+    }
+ }

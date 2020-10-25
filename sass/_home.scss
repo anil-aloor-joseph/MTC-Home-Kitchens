@@ -7,7 +7,7 @@ header{
         min-height: 81px;
         &.border-down{
             border-bottom:1px solid rgba($color: #ffffff, $alpha: 0.3);
-            @media (max-width: 992px) {
+            @include screen(tabonly) {
                 border-bottom:0;
             }
         }
@@ -23,14 +23,14 @@ header{
             }
         }
         .social-media-icons{
-            @media (min-width: 1200px) { margin-right: max(75px, 10px); }
+            @include screen(desktop) { margin-right: max(75px, 10px); }
         }
         .logo{
-            @media (min-width: 1200px) {margin: 0 80px;}
+            @include screen(desktop) {margin: 0 80px;}
         }
         .button{
             padding: 13px 38px;
-            @media (min-width: 1200px) {margin-left: 20px;}
+            @include screen(desktop) {margin-left: 20px;}
         }
         #res-button{
             font-size:25px;
@@ -55,7 +55,7 @@ header{
     font-size: 32px;
     line-height: 42px;
     font-family: Helvetica-Bold;
-    @media (max-width:576px){
+    @include screen(mobileonly){
         font-size: 24px;
         line-height: 29px;
     }
@@ -69,10 +69,10 @@ header{
     color: #FFFFFF;
     text-transform: uppercase;
     padding: 10px 30px;
-    @media (min-width: 1200px) {
+    @include screen(desktop){
         padding: 20px 59px;
     }
-    @media (max-width:576px){
+    @include screen(mobileonly){
         font-size: 12px;
         padding: 10px 15px;
     }
@@ -112,12 +112,12 @@ header{
         }
         .sliding-content{
             max-width: 686px;
-            @media (max-width:576px){
+            @include screen(mobileonly){
                 padding:10px;
             }
             .text-small-title{
                 text-shadow: 0px 0px 4px $c-dark-black;
-                @media (max-width:576px){
+                @include screen(mobileonly){
                     margin-bottom:8px;
                 }
             }
@@ -127,11 +127,11 @@ header{
                 text-shadow: 0px 0px 25px #00000080;
                 line-height: 32px;
                 margin-bottom: 30px;
-                @media (min-width: 1200px) {
+                @include screen(desktop) {
                     font-size: 52px;
                     line-height: 58px;
                 }
-                @media (max-width:576px){
+                @include screen(mobileonly){
                     font-size: 25px;
                     line-height: 28px;
                     margin-bottom: 6px;
@@ -149,14 +149,14 @@ header{
     .image-details{
         padding-left:35px;
         max-width: 90%;
-        @media (max-width: 992px) {
+        @include screen(tabonly) {
             padding: 60px;
         }
-        @media (max-width: 576px) { 
+        @include screen(mobileonly) { 
             padding-left:0px;
             padding-right:0px;
         }
-        @media (min-width: 1200px) {
+        @include screen(desktop) {
             padding-left: 70px;
             max-width: 645px;
         }
@@ -164,7 +164,7 @@ header{
     .text-main-title{
         font-size: 28px;
         line-height: 31px;
-        @media (min-width: 1200px) {
+        @include screen(desktop) {
             font-size: 42px;
             line-height: 52px;
             margin-bottom: 30px;
@@ -174,7 +174,7 @@ header{
         font-size: 15px;
         font-family: Roboto-Regular;
         line-height: 28px;
-        @media (min-width: 1200px) {
+        @include screen(desktop) {
             padding-bottom: 27px;
         }
     }
@@ -183,13 +183,13 @@ header{
 .section-3 {
     .owl-carousel-2{
         max-width: 300px;
-        @media (min-width: 1200px) {
+        @include screen(desktop) {
             max-width: 600px;
         }
         .sliding-content{
             padding:117px 0;
             max-width: 300px;
-            @media (min-width: 1200px) {
+            @include screen(desktop) {
                 max-width: 600px;
             }
             .text-main-title{
@@ -201,7 +201,7 @@ header{
                 padding-bottom: 11px;
                 line-height: 32px;
                 margin:0;
-                @media (max-width: 576px) { 
+                @include screen(mobileonly) { 
                     font-size: 14px;
                     line-height: 23px;
                 }
@@ -226,7 +226,7 @@ header{
             height: 71px;
             background-size: contain;
             background-repeat: no-repeat;
-            @media (max-width:576px){
+            @include screen(mobileonly){
                 display: none;
             }
         }

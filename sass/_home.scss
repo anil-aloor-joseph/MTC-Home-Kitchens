@@ -259,6 +259,11 @@ header{
     background-size: cover;
     background-position: center;
     padding:40px 0;
+    .container{
+        &.border-down{
+            border-bottom:1px solid rgba($color: $c-white, $alpha: 0.3);
+        }
+    }
     .footer-logo{
         &::before{
             content: "";
@@ -310,6 +315,9 @@ header{
                 justify-content: center;
                 align-items: center;
                 margin-right: 15px;
+                @include screen(mobileonly){
+                    margin: 5px;
+                }
                 a:hover{
                     color: $c-dark-black;
                 }
@@ -318,9 +326,6 @@ header{
     }
     .copyright{
         padding:48px 0;
-        &.border-down{
-            border-bottom:1px solid rgba($color: $c-white, $alpha: 0.3);
-        }
         .text-small-title{
             line-height: 26px;
             opacity: 0.5;

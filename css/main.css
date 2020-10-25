@@ -249,6 +249,8 @@ header {
   background-size: cover;
   background-position: center;
   padding: 40px 0; }
+  .footer .container.border-down {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3); }
   .footer .footer-logo::before {
     content: "";
     width: 50%;
@@ -289,12 +291,13 @@ header {
     justify-content: center;
     align-items: center;
     margin-right: 15px; }
+    @media (max-width: 576px) {
+      .footer .footer-body .social-media-icons li {
+        margin: 5px; } }
     .footer .footer-body .social-media-icons li a:hover {
       color: #000000; }
   .footer .copyright {
     padding: 48px 0; }
-    .footer .copyright.border-down {
-      border-bottom: 1px solid rgba(255, 255, 255, 0.3); }
     .footer .copyright .text-small-title {
       line-height: 26px;
       opacity: 0.5;

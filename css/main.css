@@ -186,16 +186,22 @@ header {
       padding-bottom: 27px; } }
 
 .section-3 .owl-carousel-2 {
-  max-width: 300px; }
+  max-width: 450px; }
   @media (min-width: 1200px) {
     .section-3 .owl-carousel-2 {
       max-width: 600px; } }
+  @media (max-width: 576px) {
+    .section-3 .owl-carousel-2 {
+      max-width: 300px; } }
   .section-3 .owl-carousel-2 .sliding-content {
     padding: 117px 0;
-    max-width: 300px; }
+    max-width: 450px; }
     @media (min-width: 1200px) {
       .section-3 .owl-carousel-2 .sliding-content {
         max-width: 600px; } }
+    @media (max-width: 576px) {
+      .section-3 .owl-carousel-2 .sliding-content {
+        max-width: 300px; } }
     .section-3 .owl-carousel-2 .sliding-content .text-main-title {
       margin-bottom: 24px; }
     .section-3 .owl-carousel-2 .sliding-content .text-narration {
@@ -214,13 +220,13 @@ header {
       margin-bottom: 36px; }
 
 .section-3 .arrows {
-  width: 90%;
+  width: 95%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%); }
-  @media (min-width: 768px) {
+  @media (min-width: 1200px) {
     .section-3 .arrows {
-      width: 100%; } }
+      width: 80%; } }
   .section-3 .arrows div {
     width: 71px;
     height: 71px;

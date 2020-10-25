@@ -182,15 +182,21 @@ header{
 
 .section-3 {
     .owl-carousel-2{
-        max-width: 300px;
+        max-width: 450px;
         @include screen(desktop) {
             max-width: 600px;
         }
+        @include screen(mobileonly) { 
+            max-width: 300px;
+        }
         .sliding-content{
             padding:117px 0;
-            max-width: 300px;
+            max-width: 450px;
             @include screen(desktop) {
                 max-width: 600px;
+            }
+            @include screen(mobileonly) { 
+                max-width: 300px;
             }
             .text-main-title{
                 margin-bottom: 24px;
@@ -214,12 +220,12 @@ header{
         }
     }
     .arrows{
-        width:90%;
+        width:95%;
         top: 50%;
         left: 50%;
         transform: translate(-50%,-50%);
-        @media (min-width: 768px) { 
-            width:100%;
+        @include screen(desktop) { 
+            width:80%;
          }
         div{
             width: 71px;

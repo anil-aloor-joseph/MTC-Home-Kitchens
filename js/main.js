@@ -6,7 +6,7 @@ $(document).ready(function(){
     carousel1.owlCarousel({
         items:1,
         loop:true,
-        autoplay:true
+        autoplay:false
     });
 
     carousel2.owlCarousel({
